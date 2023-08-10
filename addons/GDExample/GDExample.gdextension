@@ -1,0 +1,11 @@
+[configuration]
+
+entry_symbol = "gdextension_init"
+compatibility_minimum = 4.1
+
+[libraries]
+
+windows.debug.x86_32 = "bin/libGDExample.windows.template_debug.x86_32.dll"
+windows.release.x86_32 = "bin/libGDExample.windows.template_release.x86_32.dll"
+windows.debug.x86_64 = "bin/libGDExample.windows.template_debug.x86_64.dll"
+windows.release.x86_64 = "bin/libGDExample.windows.template_release.x86_64.dll"

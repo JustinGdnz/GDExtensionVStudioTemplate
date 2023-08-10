@@ -1,0 +1,5 @@
+{
+    "workspace": "GDExtensionVStudioTemplate",
+    "addon_root": "addons",
+    "addon_name": "GDExample"
+}
