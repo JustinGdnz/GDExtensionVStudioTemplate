@@ -14,7 +14,7 @@ Check out the official documentation for [GDExtension](https://docs.godotengine.
 3. Run the [Win-Generate.bat](https://github.com/JustinGdnz/GDExtensionVStudioTemplate/blob/master/scripts/Win-Genenerate.bat) file found on the `scripts` folder.
 4. Done.
 
-**NOTE**: Cloning it's not recommended, instead make your own repository by clicking on the **`Use this template`** button.
+**NOTE**: Cloning it's not recommended, instead make a new repository by clicking on the **`Use this template`** button.
 
 ***
 
