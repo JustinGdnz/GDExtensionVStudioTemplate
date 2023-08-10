@@ -14,6 +14,8 @@ Para más información utilice la documentación oficial de [GDExtension](https:
 3. Ejecuta el archivo [Win-Generate.bat](https://github.com/JustinGdnz/GDExtensionVStudioTemplate/blob/master/scripts/Win-Genenerate.bat) encontrado en la carpeta `scripts`.
 4. Listo.
 
+**NOTA**: No es recomendable clonar el repositorio, en su lugar crea uno nuevo dando clic en el botón **`Use this template`**.
+
 ***
 
 ## Información Adicional
