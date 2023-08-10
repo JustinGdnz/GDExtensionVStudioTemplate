@@ -18,18 +18,27 @@ Para más información utilice la documentación oficial de [GDExtension](https:
 
 ***
 
-## Información Adicional
-### **Modificación de la plantilla**
-Para modificar la plantilla, como el nombre de la extensión, necesitamos tener en cuenta lo siguiente.
+## Additional Information
+### **Modificacion de la plantilla**
 
 **`addonsettings.json`**:
-En este archivo se encuentra la información de nuestra extensión, basta con modificar el `addon_name` para cambiar el nombre a nuestra extensión. **Es importante recordar que toda la plantilla se basa en este archivo**.
+Este archivo contiene una pequeña cantidad de datos, como el nombre de la extensión. **Es importante recordar que toda la plantilla se basa en este archivo.**.
+- `workspace`: El nombre de tu espacio local de trabajo. Cambiarlo no requiere hacer modificaciones adicionales.
+- `addon_root`: El directorio donde se ubica la carpeta de la extensión.
+- `addon_name`: El nombre de la extension.
 
-Al cambiar el nombre de la extensión debemos actualizar los siguientes datos:
-1. **`/<addon_name>/`**: Esta carpeta contiene el código de nuestra extensión.
-2. **`/addons/<addon_name>/`**: Esta es la carpeta donde se ubica nuestra extensión (`*.gdextension`) y en donde será compilada (`/bin`).
-3. **`<addon_name>.gdextension`**: Este archivo contiene la información que Godot usara para cargar la extensión.
+Ya sea que cambies el `addon_root`, `addon_name` o ambos, requiere que hagas los siguientes cambios
 
+1. **`/<addon_name>/`**: Esta carpeta contiene el código de la extensión y tiene que existir para generar los archivos de la solución.
+   - Por defecto es `/GDExample/`.
+
+2. **`/<addon_root>/<addon_name>/`**: Esta es la carpeta principal del addon, donde existe el archivo `*.gdextension` y en donde la extensión será compilada (`/bin`).
+   - Por defecto es `/addons/GDExample/`.
+  
+3. **`<addon_name>.gdextension`**: Este es el archivo que contiene todos los datos necesarios para que Godot cargue correctamente la extensión.
+   - Por defecto es `GDExample.gdextension`.
+
+Por último solo hace falta modificar el contenido del archivo de la extensión para que coincida con el nombre de la extensión.
 ```ini
 [configuration]
 
